@@ -1,11 +1,13 @@
 <h1>Users</h1>
-<table>
-  <tr><th>Id</th><th>Name</th><th>Email</th></tr>
-  <tr *ngFor="let user of users">
-    <td>{{user.id}}</td>
-    <td><a routerLink="/users/{{user.id}}">{{user.name}}</a></td>
-    <td>{{user.email}}</td>
-  </tr>
-</table>
+<div class="mat-elevation-z8">
+  <table>
+    <tr><th>Id</th><th>Name</th><th>Email</th></tr>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td><a routerLink="/users/{{user.id}}/edit">{{user.name}}</a></td>
+      <td>{{user.email}}</td>
+    </tr>
+  </table>
+</div>
+<a  mat-raised-button color="primary" routerLink="/users/new">Create user</a>
 
-<a routerLink="/users/new">Create user</a>

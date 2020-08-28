@@ -1,9 +1,23 @@
 <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
   <table>
-    <tr><th>Id</th><td><input type="text" name="id" [ngModel]="user.id"></td></tr>
-    <tr><th>Name</th><td><input type="text" name="name" [ngModel]="user.name"></td></tr>
-    <tr><th>Email</th><td><input type="text" name="email" [ngModel]="user.email"></td></tr>
+    <!-- <tr><th>Id</th><td> -->
+      <mat-form-field class="example-full-width">
+        <mat-label>Id</mat-label><input matInput name="id" [ngModel]="user.id">
+      </mat-form-field>
+    <!-- </td></tr> -->
+    <!-- <tr><th>Name</th><td> -->
+      <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput name="name" [ngModel]="user.name">
+      </mat-form-field>
+    <!-- </td></tr> -->
+    <!-- <tr><th>Email</th><td> -->
+      <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput name="email" [ngModel]="user.email">
+      </mat-form-field>
+    <!-- </td></tr> -->
   </table>
-  <button type="submit">OK</button>
-  <button routerLink="/users">Cancel</button>
+  <button mat-raised-button color="primary" type="submit">OK</button>
+  <button mat-raised-button routerLink="/users">Cancel</button>
 </form>

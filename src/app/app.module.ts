@@ -17,6 +17,9 @@ import { ConfirmDialogComponent } from './tools/confirm-dialog/confirm-dialog.co
 import { UserCreateComponent } from './user/user-create/user-create.component';
 import { UserShowComponent } from './user/user-show/user-show.component';
 
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +38,10 @@ import { UserShowComponent } from './user/user-show/user-show.component';
     FormsModule,
     HttpClientModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatTableModule
   ],
   providers: [
     UserService
