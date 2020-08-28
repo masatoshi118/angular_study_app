@@ -15,7 +15,7 @@ import { UserListComponent } from './user/user-list/user-list.component';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { ConfirmDialogComponent } from './tools/confirm-dialog/confirm-dialog.component';
 import { UserCreateComponent } from './user/user-create/user-create.component';
-import { UserDeleteComponent } from './user/user-delete/user-delete.component';
+import { UserShowComponent } from './user/user-show/user-show.component';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
@@ -30,7 +30,7 @@ import { MatTableModule } from '@angular/material/table';
     UserEditComponent,
     ConfirmDialogComponent,
     UserCreateComponent,
-    UserDeleteComponent
+    UserShowComponent
   ],
   imports: [
     BrowserModule,

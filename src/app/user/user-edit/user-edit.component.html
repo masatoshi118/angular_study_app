@@ -1,3 +1,4 @@
+<h1>Edit User</h1>
 <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
   <input type="hidden" name="id" [ngModel]="user.id">
   <table>
@@ -6,5 +7,5 @@
     <tr><th>Email</th><td><input type="text" name="email" [ngModel]="user.email"></td></tr>
   </table>
   <button type="submit">OK</button>
-  <button routerLink="/users">Cancel</button>
+  <button routerLink="/users/{{user.id}}">Cancel</button>
 </form>
